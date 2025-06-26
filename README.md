@@ -19,6 +19,44 @@ This project predicts future gold prices using a simple Linear Regression model.
 pip install numpy pandas scikit-learn
 
 
+---
+
+## 📊 Dataset
+
+The dataset was retrieved using the `yfinance` library, using the Yahoo Finance ticker `GC=F` (Gold Futures).  
+We used the `Close` prices for modeling. The CSV file is stored in the `data/` folder.
+
+---
+
+## 🧪 Methodology
+
+1. Fetch historical gold prices from 2010 to 2024
+2. Perform exploratory data analysis (EDA)
+3. Train-test split of the dataset
+4. Apply Linear Regression for prediction
+5. Evaluate the model using R² Score and RMSE
+6. Visualize predicted vs actual prices
+
+---
+
+## 🛠 Technologies Used
+
+- Python 3.10  
+- Pandas, NumPy  
+- Scikit-learn  
+- yfinance  
+- Matplotlib, Seaborn
+
+---
+
+## ⚙️ How to Run
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+
+
 ## Usage
 
 1. Prepare your historical gold price data as a CSV file with a 'Close' column.
